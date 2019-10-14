@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  background-image: url('https://www.nationalparks.org/sites/default/files/yosemite_16281.JPG'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+
+main {
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+form {
+  font-size: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+#search-area, #search-num {
+  background-color: transparent;
+  color: white;
+  width: 65px;
+  height: 22px;
+  padding-left: 3px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid white;
+}
+
+.submit {
+  display: block;
+  width: 70px;
+  height: 25px;
+  font-size: 18px;
+  font-family: "Arial";
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+#search-area:focus {
+  background-color: rgba(232, 208, 243, 0.897);
+  color: #1f3a93;
+}
+
+.result {
+  width: 80%;
+  margin: auto;
+}
+
+h2 {
+  color: #fffacd;
+}
+
+button:hover, button:focus {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+h1, form, .result {
+  color: white;
+}
+
+.result p {
+  font-size: 20px;
+}
+
+.result li:hover {
+  background-color: rgb(183, 236, 192);
+  color: #1f3a93;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  border-radius: 5px;
+}
+
+a {
+  color: rgb(255, 255, 0);
+}
+
+@media screen and (max-width: 720px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label {
+    display:block;
+  }
+}
